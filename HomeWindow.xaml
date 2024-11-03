@@ -1,0 +1,32 @@
+﻿<Window x:Class="VB_MNT.HomeWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Home" Height="450" Width="800">
+    <DockPanel>
+        <!-- Menu no topo da tela -->
+        <Menu DockPanel.Dock="Top">
+            <!-- Menu Cadastro -->
+            <MenuItem Header="Cadastro">
+                <MenuItem Header="Usuários" />
+                <MenuItem Header="Empresas" />
+                <MenuItem Header="Produtos" />
+            </MenuItem>
+
+            <!-- Menu Relatórios -->
+            <MenuItem Header="Relatórios">
+                <MenuItem Header="Relatório de Vendas" />
+                <MenuItem Header="Relatório de Estoque" />
+            </MenuItem>
+
+            <!-- Menu Configurações -->
+            <MenuItem Header="Configurações">
+                <MenuItem Header="Perfil" />
+                <MenuItem Header="Preferências" />
+                <!--<MenuItem Header="Logout" Click="Logout_Click" />-->
+            </MenuItem>
+        </Menu>
+
+        <!-- Área principal para o conteúdo -->
+        <ContentControl x:Name="MainContent" Margin="10" />
+    </DockPanel>
+</Window>

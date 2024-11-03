@@ -1,0 +1,68 @@
+# Excluir arquivos de compilação binários e temporários
+bin/
+obj/
+
+# Excluir diretórios de pacotes NuGet
+packages/
+!packages/repositories.config
+
+# Excluir configurações e cache do Visual Studio
+.vs/
+.vscode/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Excluir configurações de build e debug
+*.BuildLog.*
+*.tlog
+*.log
+*.log2
+
+# Excluir arquivos de cache do Visual Studio
+ipch/
+*.aps
+*.ncb
+*.opendb
+*.VC.opendb
+
+# Excluir arquivos gerados pelo designer e temporários do sistema
+*.designer.cs
+*.sdf
+*.cache
+*.pdb
+*.mdb
+
+# Excluir arquivos de publicação (gerados pela ferramenta de publicação ClickOnce)
+app.publish/
+
+# Excluir arquivos de configuração específicos da máquina (mantendo App.config e Web.config)
+*.Settings.*
+*.config.*
+!App.config
+!Web.config
+
+# Excluir arquivos do NuGet
+project.lock.json
+project.fragment.lock.json
+artifacts/
+*.nupkg
+*.snupkg
+.nuget/
+*.nuget.props
+*.nuget.targets
+
+# Excluir arquivos de backup e arquivos temporários do sistema
+*.bak
+*.swp
+*~
+*.tmp
+*.tmp.*
+
+# Excluir pastas de configurações e caches de dependências do Visual Studio e Rider
+_ReSharper*/
+*.resharper
+.idea/
+.idea/
+ReSharper/*
