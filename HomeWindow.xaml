@@ -7,26 +7,25 @@
         <Menu DockPanel.Dock="Top">
             <!-- Menu Cadastro -->
             <MenuItem Header="Cadastro">
-                <MenuItem Header="Usuários" />
-                <MenuItem Header="Empresas" />
-                <MenuItem Header="Produtos" />
+                <MenuItem Header="Usuários" Click="OpenTab_Click" />
+                <MenuItem Header="Empresas" Click="OpenTab_Click" />
+                <MenuItem Header="Produtos" Click="OpenTab_Click" />
             </MenuItem>
 
             <!-- Menu Relatórios -->
             <MenuItem Header="Relatórios">
-                <MenuItem Header="Relatório de Vendas" />
-                <MenuItem Header="Relatório de Estoque" />
+                <MenuItem Header="Relatório de Vendas" Click="OpenTab_Click" />
+                <MenuItem Header="Relatório de Estoque" Click="OpenTab_Click" />
             </MenuItem>
 
             <!-- Menu Configurações -->
             <MenuItem Header="Configurações">
-                <MenuItem Header="Perfil" />
-                <MenuItem Header="Preferências" />
-                <!--<MenuItem Header="Logout" Click="Logout_Click" />-->
+                <MenuItem Header="Perfil" Click="OpenTab_Click" />
+                <MenuItem Header="Preferências" Click="OpenTab_Click" />
             </MenuItem>
         </Menu>
 
-        <!-- Área principal para o conteúdo -->
-        <ContentControl x:Name="MainContent" Margin="10" />
+        <!-- Área principal para o conteúdo em abas -->
+        <TabControl x:Name="MainTabControl" Margin="10" />
     </DockPanel>
 </Window>

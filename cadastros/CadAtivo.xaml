@@ -1,0 +1,25 @@
+﻿<UserControl x:Class="VB_MNT.CadAtivo"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:VB_MNT"
+        Height="450" Width="800">
+    <Grid Background="White">
+        <TabControl x:Name="MainTabControl" SelectedIndex="{Binding SelectedTabIndex}">
+            <TabItem Header="Listagem">
+                <Grid Background="LightGray">
+                    <DataGrid x:Name="AtivosDataGrid" AutoGenerateColumns="True" Margin="10"/>
+                    <Button Content="Editar" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,211,0,0" Click="EditarButton_Click"/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Dados" Visibility="{Binding IsDadosTabVisible}">
+                <Grid Background="LightBlue">
+                    <Grid>
+                        <TextBox Margin="20" Name="AtivoTextBox"/>
+                        <TextBlock Margin="20" Text="Inserir/Atualizar Ativo" Foreground="Gray" IsHitTestVisible="False"
+                                   Visibility="{Binding Text, ElementName=AtivoTextBox, FallbackValue=Collapsed}"/>
+                    </Grid>
+                </Grid>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</UserControl>
